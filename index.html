@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Imom Moturidiy xalqaro ilmiy-tadqiqot markazining rasmiy sahifasi." />
-<meta name="theme-color" content="#0F4C5C" />
+<meta name="theme-color" content="#007f89" />
 <title>Imom Moturidiy xalqaro ilmiy-tadqiqot markazi</title>
 
 <!-- Favicon (gumbazli emblema) -->
@@ -15,7 +15,7 @@
    ASOSIY O‘ZGARUVCHILAR
    ========================================================= */
 :root {
-  --teal: #0F4C5C;
+  --teal: #007f89;
   --blue: #1B3C73;
   --sand: #F4E1C1;
   --gold: #D4AF37;
@@ -61,7 +61,7 @@ img, svg { max-width: 100%; display: block; }
   background:
     radial-gradient(ellipse at 20% 10%, rgba(27, 60, 115, 0.85), transparent 55%),
     radial-gradient(ellipse at 80% 90%, rgba(212, 175, 55, 0.15), transparent 50%),
-    linear-gradient(160deg, #0A3543 0%, #0F4C5C 45%, #1B3C73 100%);
+    linear-gradient(160deg, #0A3543 0%, #007f89 45%, #1B3C73 100%);
 }
 .bg-pattern {
   position: fixed;
@@ -141,7 +141,8 @@ img, svg { max-width: 100%; display: block; }
   border-radius: 50%;
   border: 1px dashed rgba(15, 76, 92, 0.35);
 }
-.logo-wrap svg { width: 94px; height: 94px; }
+.logo-wrap svg,
+.logo-wrap img { width: 94px; height: 94px; object-fit: contain; }
 
 @keyframes logoIn {
   from { opacity: 0; transform: scale(0.8) rotate(-6deg); }
@@ -481,47 +482,7 @@ h1.title-main {
         Markaz logotipi – rasmiy belgining SVG ko‘rinishidagi qayta ishlanishi.
         Madrasa ayvoni, gumbaz, ustunlar va ochiq kitob tasviri.
       -->
-      <svg viewBox="0 0 200 200" role="img" aria-label="Imom Moturidiy markazi logotipi">
-        <defs>
-          <linearGradient id="logoGrad" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0"   stop-color="#1B3C73"/>
-            <stop offset="1"   stop-color="#0F4C5C"/>
-          </linearGradient>
-        </defs>
-        <g fill="url(#logoGrad)">
-          <!-- Cho‘qqi (shpil) -->
-          <rect x="98" y="10" width="4" height="12"/>
-          <circle cx="100" cy="8" r="3"/>
-          <!-- Gumbaz -->
-          <path d="M70 62 C70 38 82 22 100 22 C118 22 130 38 130 62 Z"/>
-          <!-- Gumbaz asosi -->
-          <rect x="66" y="60" width="68" height="10"/>
-          <!-- Ayvon shipi (peshtoq) -->
-          <rect x="40" y="70" width="120" height="14"/>
-          <rect x="44" y="84" width="112" height="6"/>
-          <!-- Ustunlar (4 ta) -->
-          <rect x="48"  y="90"  width="14" height="70"/>
-          <rect x="74"  y="90"  width="14" height="70"/>
-          <rect x="112" y="90"  width="14" height="70"/>
-          <rect x="138" y="90"  width="14" height="70"/>
-          <!-- Markaziy mehrob (kitob ortidagi tok arch) -->
-          <path d="M90 100 C90 90 110 90 110 100 V150 H90 Z"/>
-          <!-- Ayvon poli -->
-          <rect x="36" y="160" width="128" height="10"/>
-          <rect x="30" y="170" width="140" height="8"/>
-        </g>
-        <!-- Ochiq kitob (markazda) -->
-        <g fill="url(#logoGrad)">
-          <path d="M60 120 L100 130 L100 168 L60 158 Z"/>
-          <path d="M140 120 L100 130 L100 168 L140 158 Z"/>
-          <!-- Kitob markazi (bo‘g‘in) -->
-          <rect x="98" y="128" width="4" height="42"/>
-        </g>
-        <!-- Kitob ichi bo‘shligi (oq chiziqlar) -->
-        <g fill="#F4E1C1">
-          <path d="M66 126 L98 134 L98 162 L66 154 Z" opacity="0.0"/>
-        </g>
-      </svg>
+      <img src="maturidiy logo.svg" alt="Imom Moturidiy markazi logotipi">
     </div>
 
     <div class="title-top">O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi</div>
